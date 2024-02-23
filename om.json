@@ -1,0 +1,71 @@
+[
+    {
+        "id": "ff8734559c629652",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 480,
+                "y": 280,
+                "wires": [
+                    {
+                        "id": "d7e4a87bfc2b87a5"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 880,
+                "y": 280,
+                "wires": [
+                    {
+                        "id": "d7e4a87bfc2b87a5",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {
+            "module": "node-red-contrib-trialofone",
+            "type": "trialofone",
+            "version": "0.0.1",
+            "author": "omkar",
+            "desc": "trialofone",
+            "keywords": "node-red.omkar",
+            "license": "Apache-2.0"
+        },
+        "color": "#DDAA99"
+    },
+    {
+        "id": "d7e4a87bfc2b87a5",
+        "type": "function",
+        "z": "ff8734559c629652",
+        "name": "function 1",
+        "func": "msg.payload = \"1\"\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "bdab4a0ce8678178",
+        "type": "subflow:ff8734559c629652",
+        "z": "fe00c989d257bd8f",
+        "name": "",
+        "x": 920,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    }
+]
